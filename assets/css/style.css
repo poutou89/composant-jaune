@@ -6,35 +6,34 @@
 body {
     font-family: "Figtree";
     background-color: hsl(47, 88%, 63%);
-}
-
-.yellowcube {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    height: 100vh;
 }
 
 .card {
-    flex-direction: column;
-    width: 30%;
-    height: 60%;
+    width: 50%;
+    margin: 0 auto;
     box-shadow: 8px 8px hsl(0, 0%, 7%);
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
     border: 2px solid black;
-    flex-wrap: nowrap;
     padding: 0 20px;
 }
 
-.image {
+.card-image {
     padding: 5% 0 0 0;
 }
 
-.image img {
+.card-image img {
     width: 100%;
     border-radius: 12px;
 }
 
-.statdate h4 {
+.card-meta h4 {
     display: inline-block;
     background-color: hsl(47, 88%, 63%);
     margin: 5% 0 0 0;
@@ -46,18 +45,18 @@ h1, h4 {
     font-weight: 900;
 }
 
-.text p {
+.card-text p {
     color: hsl(0, 0%, 42%);
 }
 
-.profile {
+.card-profile {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-.profile img {
+.card-profile img {
     width: 10%;
     height: 10%;
 }
